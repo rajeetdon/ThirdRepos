@@ -45,5 +45,17 @@ namespace Ticketing
             mTicketPrice.calculatePrice();
             lblAmount.Text = System.Convert.ToString(mTicketPrice.AmountDue);
         }
-     }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // TicketsForm
+            // 
+            this.ClientSize = new System.Drawing.Size(557, 367);
+            this.Name = "TicketsForm";
+            this.ResumeLayout(false);
+
+        }
+    }
 }
